@@ -1,0 +1,85 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Prend toute la largeur de la page */
+    top: 0; /* En haut de la page */
+    z-index: 1000; /* Assure que la barre de navigation est au-dessus du reste du contenu */
+    border-bottom: 2px solid transparent; /* Ajoute une bordure transparente au bas de la barre de navigation */
+    box-sizing: border-box;
+}
+
+  .logo img {
+      max-width: 75px;
+    }
+  
+/* ... (autres styles) ... */
+
+/* Styles pour le menu déroulant */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    border: transparent 10px solid;
+    height: 80%;
+  }
+
+  /* Styles pour le sous-menu */
+  .submenu {
+    display: none;
+    position: fixed;
+    top: 60px; /* Hauteur de la barre de navigation */
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la page */
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .submenu li {
+    margin: 0;
+  }
+  
+  .submenu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submenu a:hover {
+    background-color: red;
+  }
+  
+  nav li:hover {
+    border-bottom: 2px solid #ff0000; /* Rouge */
+    transition: 0.5s;
+
+  }
+
+  nav li:hover .submenu,
+.submenu:hover {
+  display: block;
+}
+  
