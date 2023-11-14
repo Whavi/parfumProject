@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
   }
-
-
   body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -50,13 +48,14 @@
   
   /* Hero Section Styles */
   section#hero {
-    background-image: url('/img/hero.jpg');
+    background-image: url('/img/hero1.jpg');
     background-size: cover;
     opacity: 0.9;
     color: #fff;
     text-align: center;
-    padding: 380px;
-    
+    padding: 400px;
+    height: auto;
+    width: auto;
   }
   section#hero h2 { 
     display: inline-block;

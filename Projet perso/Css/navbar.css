@@ -1,5 +1,5 @@
 header {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     padding: 1em 0;
     position: fixed;
@@ -14,10 +14,9 @@ header {
 }
 
   .logo img {
-      max-width: 75px;
+    padding-left: 20px;
+    max-width: 75px;
     }
-  
-/* ... (autres styles) ... */
 
 /* Styles pour le menu déroulant */
 nav ul {
@@ -33,7 +32,7 @@ nav ul {
   
   nav a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(238, 238, 238);
     font-weight: bold;
     font-size: 1.2em;
     display: block;
@@ -75,7 +74,6 @@ nav ul {
   nav li:hover {
     border-bottom: 2px solid #ff0000; /* Rouge */
     transition: 0.5s;
-
   }
 
   nav li:hover .submenu,
