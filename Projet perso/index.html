@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Ajoute le lien vers la bibliothèque Slick Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-cJw1Iavd9GoCFNm/FMz+knY+c+fYsbM2NN/F6I4RxiJM7F6I+O3QVmokFWM8rNHjDQQ9zFf6B1RZLZ81yr0kLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-cJw1Iavd9GoCFNm/FMz+knY+c+fYsbM2NN/F6I4RxiJM7F6I+O3QVmokFWM8rNHjDQQ9zFf6B1RZLZ81yr0kLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/Css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
@@ -13,28 +13,40 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-          <img src="/img/logo.png" alt="Logo de la boutique" width="75">
+  <!-- ... (Barre de nav balises Section) ... -->
+  <header>
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo de la boutique" width="75">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Parfums</a></li>
+        <li><a href="#">Vêtements</a></li>
+        <li><a href="#">Accessoires</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <div id="panier">
+        <a href="#" class="cart-icon">🛒 Panier</a>
+        <div id="panier-popup">
+          <ul class="article-list"></ul>
+          <p>Total : $<span id="total">0.00</span></p>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Parfums</a></li>
-            <li><a href="#">Vêtements</a></li>
-            <li><a href="#">Accessoires</a></li>
-          </ul>
-        </nav>
-        <div class="cart">
-          <a href="#" class="cart-icon">🛒</a>
-        </div>
-      </header>
+      </div>
+    </div>
+  </header>
+
+      <!-- ... (L'image d'accueil balises Section) ... -->
 
   <section id="hero">
     <h2>Les parfums qui enchantent</h2>
     <p>Découvrez notre collection exceptionnelle de parfums exquis.</p>
     <a href="#" class="cta-button">Découvrir</a>
   </section>
+
+
+<!-- ... (Carrouselle balises Section) ... -->
 
   <section id="featured-products">
     <!-- Ajoute un conteneur pour le carrousel -->
@@ -106,11 +118,160 @@
           <a href="#" class="cta-button">Ajouter au panier</a>
         </div>
       </div>
-
     </div>
   </section>
+  <hr>
+  <br>
 
-<!-- ... (autres balises HTML) ... -->
+    <!-- ... (Parfum présentation balises Section) ... -->
+
+<section id="coup-de-coeur">
+  <h2>Coup de Coeur</h2>
+
+  <div>
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+  <div class="parfum-list">
+    <div class="parfum">
+      <img src="/img/parfum1.jpg" alt="Parfum 1">
+      <h3>Parfum 1</h3>
+      <p>Description du parfum 1.</p>
+      <p class="prix">$59.99</p>
+      <button onclick="ajouterAuPanier('Parfum 1', 59.99)">Ajouter au Panier</button>
+    </div>
+  </div>
+
+
+</section>
+  <hr>
+  <br>
+
+  <!-- ... (Carrouselle balises Section) ... -->
+
+  <section id="featured-products">
+    <!-- Ajoute un conteneur pour le carrousel -->
+    <div class="carousel-container">
+        
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 1">
+        </div>
+        <div class="product-details">
+          <h3>Nom du Parfum 1</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$49.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 2">
+        </div>        <div class="product-details">
+          <h3>Nom du Parfum 2</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$59.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 2">
+        </div>        <div class="product-details">
+          <h3>Nom du Parfum 3</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$59.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 3">
+        </div>        <div class="product-details">
+          <h3>Nom du Parfum 4</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$59.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 4">
+        </div>        <div class="product-details">
+          <h3>Nom du Parfum 5</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$59.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="contain-img">
+          <img src="/img/perfume1.jpg" alt="Parfum 5">
+        </div>        <div class="product-details">
+          <h3>Nom du Parfum 6</h3>
+          <p>Description courte du parfum. Lorem ipsum dolor sit amet.</p>
+          <p class="price">$59.99</p>
+          <a href="#" class="cta-button">Ajouter au panier</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <br>
+
+<!-- ... (Footer balises HTML) ... -->
 
 <footer>
   <div class="footer-section">
