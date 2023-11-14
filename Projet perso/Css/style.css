@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.658;
+    color: #333;
+    
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center; 
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Hero Section Styles */
+  section#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    
+  }
+  
+  section#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+  }
+  
+  section#hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  
+  }
+  
+  .section#hero .cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    
+  }
+  
+  /* Featured Products Section Styles */
+  section#featured-products {
+    padding: 70px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Carousel Container Styles */
+  .carousel-container {
+    display: flex;
+    width: 1600px;
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    width: 300px;
+    margin: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .product-details {
+    padding: 20px;
+  }
+  
+  .product-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-details p {
+    font-size: 1.2em;
+    color: #777;
+  }
+  
+  .product-details .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    section#hero {
+      padding: 50px;
+    }
+  
+    section#featured-products {
+      padding: 20px;
+    }
+  
+    /* Adjust carousel styles for smaller screens */
+    .carousel-container {
+      flex-direction: column;
+    }
+  
+    .product-card {
+      margin: 0 0 20px 0;
+    }
+  }
+  
