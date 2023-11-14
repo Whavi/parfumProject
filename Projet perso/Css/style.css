@@ -6,72 +6,90 @@
 
   
   body {
-    font-family: 'Helvetica Neue', sans-serif;
-    line-height: 1.658;
-    color: #333;
-    
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center; 
-  }
-  
-  nav {
-    margin-top: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav li {
-    display: inline;
-    margin-right: 20px;
-    
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fff;
+}
   
   /* Hero Section Styles */
   section#hero {
-    background-image: url('hero-image.jpg');
+    background-image: url('/img/hero.jpg');
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 100px;
+    padding: 355px;
     
   }
   
   section#hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    background-color: rgba(112, 30, 112, 0.1);
     
   }
   
   section#hero p {
     font-size: 1.2em;
     margin-bottom: 40px;
+    background-color: rgba(112, 30, 112, 0.1);
+    
   
   }
   
-  .section#hero .cta-button {
+  .cta-button {
     display: inline-block;
-    background-color: #fff;
-    color: #333;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    background-color: rgba(112, 30, 112, 0.8);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5em;
     text-decoration: none;
     border-radius: 5px;
-    
-    
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color:rgb(212, 55, 212);
   }
   
   /* Featured Products Section Styles */
