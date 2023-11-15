@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: #1d1d1d;
     color: #fff;
     padding: 1em 0;
     position: fixed;
@@ -12,10 +12,16 @@ header {
     border-bottom: 2px solid transparent; /* Ajoute une bordure transparente au bas de la barre de navigation */
     box-sizing: border-box;
 }
+.logo{
+  width: 100px;
+  padding-left: 20px;
+}
 
-  .logo img {
-    padding-left: 20px;
-    max-width: 75px;
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: transparent;
     }
 
 /* Styles pour le menu déroulant */
@@ -45,10 +51,10 @@ nav ul {
   .submenu {
     display: none;
     position: fixed;
-    top: 60px; /* Hauteur de la barre de navigation */
-    left: 0;
-    width: 100%; /* Prend toute la largeur de la page */
-    background-color: #333;
+    top: 50px; /* Hauteur de la barre de navigation */
+    left: 15%;
+    width: 70%; /* Prend toute la largeur de la page */
+    background-color: #171717;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     list-style-type: none;
     margin-top: 50px;

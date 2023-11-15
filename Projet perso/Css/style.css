@@ -79,6 +79,77 @@
   .cta-button:hover {
     background-color:rgb(212, 55, 212);
   }
+
+/* Section Article*/
+
+  #article-parfum-homme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  #article-parfum-homme .box h2{
+    position: relative;
+    bottom: 40px;
+    padding: 0 0 15px 0;
+  }
+
+  #article-parfum-homme .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #article-parfum-homme .content{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  #article-parfum-homme .text{
+    padding: 0 10px 0 10px;
+   width: 500px;
+  }
+
+  #article-parfum-homme .text h3{
+    color: black;
+    position: relative;
+    bottom: 50px;
+    text-decoration: underline 2px;
+    
+  }
+
+  #article-parfum-homme .text h4{
+    display: inline-block;
+    color: black;
+    position: relative;
+    top: 75px;
+    right: 175px;
+    text-decoration: underline 2px;
+    transition: color 0.3s ease;
+  }
+  #article-parfum-homme .text h4:hover{
+    
+    color: rgb(5, 133, 133);
+    cursor: pointer;
+    
+  }
+
+  #article-parfum-homme .text p{
+    font-size: 25px;
+ 
+  }
+
+  #article-parfum-homme .img img{
+    height: 375px;
+    border-radius: 10px;
+  }
+
+
   
   /* Featured Products Section Styles */
   section#featured-products {
@@ -139,7 +210,7 @@
 /* Section Coup de Coeur */
   #coup-de-coeur, #selection {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -148,7 +219,6 @@
   .cardParfum-list{
     display: flex;
     justify-content: center;
-    
     width: 80%;
   }
 
