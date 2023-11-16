@@ -10,6 +10,11 @@
     border-bottom: 3px dashed black;
   }
 
+  .dotted-product {
+    padding-top: 200px;
+    border-bottom: 3px dashed black;
+  }
+
 .top-footer{
     display: flex;
     justify-content: center;

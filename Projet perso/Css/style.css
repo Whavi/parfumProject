@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
   }
   body {
   font-family: 'Arial', sans-serif;
@@ -122,6 +123,159 @@
     text-decoration: underline 2px;
     
   }
+
+
+  .container-product {
+    width: 50%;
+    padding: 200px 0 0 0;
+    margin: 0 auto;
+  }
+  
+  
+  #product-product {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    
+  }
+  
+  #product-product img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .product-details-product {
+    padding: 20px;
+    display: flex;
+
+  }
+
+  .product-details-product img{
+    width: 300px;
+    margin-right: 100px;
+  }
+
+  .dropdown {
+    margin-top: 15px;
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .arrow-down {
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    transform: rotate(45deg);
+  }
+  
+  .dropdown-content {
+    width: 45%;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    padding-top:10px ;
+}
+  
+  .dropdown-content p {
+    margin: 0;
+  }
+  
+  .info-product {
+    flex: 1;
+    
+  }
+
+  .product-details-product h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    
+  }
+  
+  .price-product {
+    font-size: 1.5em;
+    color: #e44d26;
+  }
+  
+  .description-product {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+    padding: 40px 0 75px 0;
+  }
+
+  .add-to-cart-product {
+    background-color: purple;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-product:hover {
+    background-color: #333;
+  }
+
+  .quantity-product {
+    padding-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .quantity-product input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  .rating-product {
+    font-size: 1.5em;
+    display: flex;
+  }
+
+  .rating-product p {
+   margin-top: 10px;
+   margin-left: 8px;
+   font-size: 15px;  
+   color: #555;  
+  }
+  
+  .star-product {
+    color: #e44d26;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .star-product:hover,
+  .star-product.active {
+    color: #ffcc00; /* Couleur des étoiles lorsqu'elles sont survolées ou sélectionnées */
+  }
+
+
+  
+  /* Section parfum Homme*/
 
   #article-parfum-homme .text h4{
     display: inline-block;

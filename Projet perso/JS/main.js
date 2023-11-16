@@ -8,4 +8,19 @@ $(document).ready(function(){
     });
   });
   
+  function toggleDropdown(dropdownId) {
+    var dropdownContent = document.getElementById(dropdownId);
+    dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+  }
+  
+  document.addEventListener('click', function(event) {
+    var dropdowns = document.querySelectorAll('.dropdown-content');
+    for (var i = 0; i < dropdowns.length; i++) {
+      if (!dropdowns[i].previousElementSibling.contains(event.target) &&
+          !dropdowns[i].contains(event.target)) {
+        dropdowns[i].style.display = 'none';
+      }
+    }
+  });
+  
   
